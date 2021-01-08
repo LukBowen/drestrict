@@ -2,7 +2,7 @@
 /**
  * Default settings for the drestrict plugin
  *
- * @author Danny Gštte <danny.goette@fem.tu-ilmenau.de>
+ * @author Danny GÅ¡tte <danny.goette@fem.tu-ilmenau.de>
  */
 
-$conf['domain']    = 'example.com';
+$conf['email_domains']    = array("example1.com", "example2.com");
