@@ -46,7 +46,7 @@ class action_plugin_drestrict extends DokuWiki_Action_Plugin {
 
         $email = explode('@', $event->data['params'][self::EMAIL_INDEX]);
         $domain = $email[1];
-        if (!in_array(strtolower($domain), $confDomain) {
+        if (!in_array(strtolower($domain), $confDomain)) {
             msg(sprintf($this->getLang('wrong_domain'), $confErrorMessage), -1);
 //            $event->stopPropagation();
             $event->preventDefault();
